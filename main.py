@@ -105,6 +105,7 @@ def mark_as_completed(filename, base_url, target_status):
     global modified, online_mode, check_mode
     selected_item = treeview.selection()
     if selected_item:
+        check_mode = False
         for iid in selected_item:
             item_index = treeview.index(iid)
             new_data = list(treeview.item(iid, 'values'))
@@ -125,9 +126,9 @@ def mark_as_completed(filename, base_url, target_status):
                 if online_mode:
                     status_str_ver.set('更新失败，数据已恢复')
         # 提交修改后，将check_mode设置为False
-        check_mode = False
+
         # 5秒后将check_mode设置为True
-        threading.Timer(5, lambda: reset_check_mode(base_url)).start()
+        threading.Timer(6, lambda: reset_check_mode(base_url)).start()
     else:
         messagebox.showinfo("提示", "请先选择一行")
 
