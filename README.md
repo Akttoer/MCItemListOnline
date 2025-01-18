@@ -8,6 +8,9 @@
 ## 需要离线版？
 
 [MCItemList](https://github.com/Akttoer/MCItemList)
+## 服务器推荐
+雨云成立于2018年，是具有自主知识产权的国产云计算服务提供商。 雨云为广大用户提供简单易用、便宜实惠、可信赖的云产品。主营包括云服务器、裸金属物理机、虚拟主机、游戏云、对象存储、CDN内容分发等广受好评的云服务产品。
+[直达链接](https://www.rainyun.com/Pang_)
 # 快速开始
 ## Windows
 
